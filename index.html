@@ -1,0 +1,108 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <h1 id="hello"></h1>
+
+    <div class="container">
+        <div class="flex-box">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h2>Challenge 1: Calculate Age in Days</h2>
+                        <br>
+                    </div>
+
+
+                    <div class="row">
+
+                        <div>
+                            <input type="number" id="age" class="col-4 form-control-lg" placeholder="Write Your Age in Years.">
+
+
+                            <button id="btn-cal-age" class="btn btn-success">Calculate Age</button>
+
+                            <button id="btn-reset-age" class="btn btn-danger">Reset</button>
+                        </div>
+
+                    </div>
+
+                    <h4>
+                        <div id="calculated_age"></div>
+                    </h4>
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h2>Challenge 2: Cat Generator</h2>
+                        <br>
+                    </div>
+
+
+                    <div class="row">
+
+                        <div>
+                            <button id="btn-cat" class="btn btn-success">Generate Cat</button>
+
+                            <button id="btn-reset-cat" class="btn btn-danger">Reset</button>
+                        </div>
+
+                    </div>
+
+                    <div id="generated_cat"></div>
+
+                </div>
+            </div>
+            <br>
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h2>Challenge 3: Change the button colors</h2>
+                        <br>
+                    </div>
+
+
+                    <div class="row">
+
+                        <div>
+                            <form action="">
+                                <select name="backdrop" id="background" onchange="changeButtonColor(this)">
+                            
+                            <option value="reset">Reset</option>
+                            <option value="red">Red</option>
+                            <option value="green">Green</option>
+                            <option value="random">Random</option>
+
+                            </select>
+                            </form>
+
+                            <button class="btn btn-primary">Weee!!</button>
+                            <button class="btn btn-danger">Google +</button>
+                            <button class="btn btn-warning">Yahoooo!!!</button>
+                            <button class="btn btn-success">Facebook</button>
+                        </div>
+                    </div>
+                    <div class="row" id="game-results"></div>
+                </div>
+            </div>
+
+            <br>
+
+        </div>
+        <script src="js/index.js"></script>
+</body>
+
+</html>
